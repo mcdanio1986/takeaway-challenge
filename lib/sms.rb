@@ -6,7 +6,7 @@ def time
 end
 # put your own credentials here
 account_sid = 'ACff0050d994728217a2b61e4867dfcc14'
-auth_token = 'c600b69ddf837a77f0ead048a1ba5308'
+auth_token = ''
 
 # set up a client to talk to the Twilio REST API
 @client = Twilio::REST::Client.new account_sid, auth_token
