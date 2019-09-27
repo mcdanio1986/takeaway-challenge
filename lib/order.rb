@@ -20,6 +20,6 @@ class Order
       end
 end
 puts "Your order total is £#{@total}"
-send_sms
+#send_sms
 end
 end
