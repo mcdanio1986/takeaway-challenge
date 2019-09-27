@@ -1,17 +1,18 @@
 class Order
 
   def initialize
-  total = 0
-  items = []
-  @menu = menu
+    @total = 0
+    @items = []
+    @menu = menu
   end
 
-def add
+  def add(item)
+    @total +=menu.items[item]
+    @items << menu.items.select { |food| food == item}
+  end
 
-end
+  def order_total
 
-def order_total
-
-end 
+  end
 
 end
