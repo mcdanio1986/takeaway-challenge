@@ -12,7 +12,10 @@ class Order
   end
 
   def order_total
-
+    @items.each do |list|
+      list.each do |food, price|
+        puts "#{food}, £#{price}"
+      end
   end
 
 end
