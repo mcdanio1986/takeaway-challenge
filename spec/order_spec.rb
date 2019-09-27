@@ -1,7 +1,7 @@
 require 'order'
 
 describe Order do
-  let(:menu) { double :menu, :items => { "Pizza" => 12, "Jacket Patato" => 6, "Burger" => 2, "Chips" =>2} }
+  let(:menu) { double :menu, :items => { "Pizza" => 12, "Jacket Patato" => 6, "Burger" => 5, "Chips" =>2} }
   subject { Order.new(menu) }
 
   context '#initialize' do

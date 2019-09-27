@@ -1,4 +1,6 @@
+require './lib/order'
 class Menu
+  attr_reader :items
 
   def initialize
     @items = {

@@ -1,14 +1,16 @@
 class Order
+  attr_accessor :total
 
-  def initialize
+  def initialize(menu = Menu.new)
     @total = 0
-    @items = []
     @menu = menu
+    @items = []
+
   end
 
   def add(item)
-    @total +=menu.items[item]
-    @items << menu.items.select { |food| food == item}
+    @total += @menu.items[item]
+    @items << @menu.items.select { |food| food == item}
   end
 
   def order_total
@@ -16,6 +18,7 @@ class Order
       list.each do |food, price|
         puts "#{food}, £#{price}"
       end
-  end
-
+end
+puts "Your order total is £#{@total}"
+end
 end
