@@ -14,7 +14,7 @@ auth_token = ''
 #def send_sms
 @client.messages.create(
   from: '+441618504736',
-  to: '+447879965073',
+  to: '+44',
   body: "Thank you for your purchase. Your order will be delivered before: #{time}."
 )
 #end
